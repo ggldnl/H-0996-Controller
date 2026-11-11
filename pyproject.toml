@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "hexapod-controller"
 version = "0.1.1"
-description = "Pi-side controller for the Hexapod"
+description = "Pi-side controller for the H-0996"
 requires-python = ">=3.8"
 dependencies = ["pyyaml>=6"]
 

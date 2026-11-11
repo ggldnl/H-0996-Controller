@@ -1,5 +1,5 @@
 """
-Wire protocol for the Hexapod firmware.
+Wire protocol for the H-0996 firmware.
 
 Keep the two in lockstep: every payload here uses the exact `struct` format
 that is annotated as `// py:` next to the C++ struct. Enum values travel on the

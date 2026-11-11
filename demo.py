@@ -15,7 +15,7 @@ GAITS = {"tripod": GaitId.TRIPOD, "wave": GaitId.WAVE, "ripple": GaitId.RIPPLE}
 
 def main():
 
-    ap = argparse.ArgumentParser(description="Hexapod hardware demo")
+    ap = argparse.ArgumentParser(description="H-0996 hardware demo")
     ap.add_argument("--gait", "-g", default="tripod", choices=list(GAITS))
     ap.add_argument("--vx", "-x", type=float, default=120.0, help="forward mm/s")
     ap.add_argument("--vy", "-y", type=float, default=0.0, help="strafe mm/s")

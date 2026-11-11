@@ -1,4 +1,4 @@
-"""Pi-side controller for the Hexapod firmware.
+"""Pi-side controller for the H-0996 firmware.
 
 Mirrors the wire protocol in Hexapod-Firmware/src/protocol.hpp and streams
 high-level setpoints to the board, which runs the whole control loop.
