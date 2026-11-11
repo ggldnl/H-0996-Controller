@@ -1,10 +1,10 @@
-# Hexapod Controller
+# H-0996 Controller
 
-This repository contains the Pi-side Python controller for my Hexapod robot.
+This repository contains the Pi-side Python controller for my H-0996 robot.
 
 The Servo2040 board runs the whole control loop (finite-state machine, gait generator and inverse kinematics). This controller opens the serial link, provisions the board with the robot's configuration at connect, then streams high-level setpoints (a velocity, a gait, a body pose) and reads telemetry back. This way we won't ever have to deal with framing and the transport layer. The wire protocol is a hand-mirror of `src/communication/protocol.hpp` in the firmware, checked byte-for-byte against the C++ encoder in the tests so the two stay in lockstep.
 
-For a complete overview of the project refer to the [main Hexapod repository](https://github.com/ggldnl/Hexapod.git). Take also a look at the [Firmware repository](https://github.com/ggldnl/Hexapod-Firmware.git) and the [Simulation repository](https://github.com/ggldnl/Hexapod-Simulation.git), which drives this same controller against the host-compiled firmware.
+For a complete overview of the project refer to the [main H-0996 repository](https://github.com/ggldnl/Hexapod.git). Take also a look at the [Firmware repository](https://github.com/ggldnl/Hexapod-Firmware.git) and the [Simulation repository](https://github.com/ggldnl/Hexapod-Simulation.git), which drives this same controller against the host-compiled firmware.
 
 ## 🗂️ Layout
 
@@ -144,4 +144,4 @@ The suite exercises the framing (CRC and golden frames against the firmware enco
 
 ## 🤝 Contribution
 
-Feel free to contribute by opening issues or submitting pull requests. For further information, check out the [main Hexapod repository](https://github.com/ggldnl/Hexapod). Give a ⭐️ to this project if you liked the content.
+Feel free to contribute by opening issues or submitting pull requests. For further information, check out the [main H-0996 repository](https://github.com/ggldnl/Hexapod). Give a ⭐️ to this project if you liked the content.
